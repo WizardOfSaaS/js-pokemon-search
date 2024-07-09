@@ -5,5 +5,92 @@
 }
 
 body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-family: Arial, Helvetica, sans;
+	background-image: linear-gradient(
+		red 48%,
+		gray 48%,
+		gray 52%,
+		white 52%
+	);
+}
+
+main {
+	padding: 10px;
+	border: 12px solid gray;
+	border-radius: 10%;
+	background-color: darkgray;
+	width: min(90%, 320px);
+}
+
+img[src=""] {
+	display: none;
+}
+
+img {
+	display: block;
+}
+
+th {
+	text-align: right;
+}
+
+button {
+	font-weight: bold;
+	color: red;
+	background-color: white;
+	padding: 3px;
+	margin: 5px;
+	border: none;
+	border-radius: 15%;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: red;
+	color: white;
+}
+
+.block {
+	display: block
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th, td {
+	width: 40%;
+	padding: 5px;
+}
+
+input {
+	border-radius: 5px;
+	text-align: center;
+	margin: 10px;
+	padding: 3px;
+}
+
+#pokemon-name {
+	text-transform: uppercase;
+}
+
+.type {
+	text-transform: capitalize;
+	padding: 2px;
+	background-color: hsl(0, 40%, 70%);
+	border-radius: 0.2em;
+	border: 2px solid hsl(0, 70%, 60%);
+	margin: 3px;
+}
+
+#types {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
